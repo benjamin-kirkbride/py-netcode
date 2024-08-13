@@ -1,0 +1,25 @@
+{
+  "cSpell.words": [
+    "acked",
+    "acks",
+    "autouse",
+    "bitstring",
+    "caplog",
+    "DGRAM",
+    "getpid",
+    "getplugin",
+    "levelname",
+    "Mypy",
+    "netcode",
+    "ojoin",
+    "packetize",
+    "pluginmanager",
+    "POLLIN",
+    "pytest",
+    "pytestconfig",
+    "redef",
+    "REPY",
+    "repyable",
+    "tobytes"
+  ]
+}
