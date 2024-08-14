@@ -15,6 +15,7 @@
     "packetize",
     "pluginmanager",
     "POLLIN",
+    "pydantic",
     "pytest",
     "pytestconfig",
     "redef",

@@ -3,13 +3,14 @@ requires = ["setuptools", "setuptools-scm", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Repyable"
+name = "netcode"
 version = "0.0.1"
 requires-python = ">=3.11"
 
 
 dependencies = [
-    "more_itertools==10.3.0",
+    "PyNaCl==1.5.0",
+    "pydantic==2.8.2",
 ]
 
 [project.optional-dependencies]
@@ -19,14 +20,14 @@ dev = [
     "pytest==8.0.2", # https://github.com/Zac-HD/hypofuzz/issues/35
     "pytest-sugar",
     "mypy>=1.10.1",
-    "black",
-    "ruff",
-    "pytest-xdist",
-    "pytest-cov",
+    "black==24.8.0",
+    "ruff==0.5.7",
+    "pytest-xdist==3.6.1",
+    "pytest-cov==5.0.0",
     "hypothesis[cli]",
     "hypofuzz",
-    "pudb",
-    "snakeviz",
+    "pudb==2024.1.2",
+    "snakeviz==2.2.0",
     "viztracer",
     "faster-fifo==1.4.7",
     "pytest-xdist==3.6.1",
@@ -77,17 +78,13 @@ no_implicit_reexport = true
 strict_equality = true
 extra_checks = true
 
-
-
 [[tool.mypy.overrides]]
 module = "tests.*"
 
 disallow_untyped_defs = false
 
-
-
 [tool.setuptools]
-packages = ["repyable", "tests"]
+packages = ["netcode", "tests"]
 
 [tool.pytest.ini_options]
 python_files = ["test_*.py", "benchmark_*.py"]
